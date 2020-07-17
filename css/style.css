@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: #ff7a7a;
+  color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 16em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 6fr 2fr 7fr;
+      grid-template-rows: 6fr 2fr 7fr;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 80%;
+    margin-top: 5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 6fr;
+        grid-template-rows: 1fr 6fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header info" "header  form";
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+    row-gap: 0.5em;
+    height: 80vh;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  font-size: 0.8em;
+  line-height: 1.4;
+  width: 100%;
+  text-align: center;
+  margin-top: 4em;
+}
+
+.header p {
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    grid-area: header;
+    text-align: left;
+  }
+  .header p {
+    font-size: 0.8em;
+  }
+}
+
+.price-info {
+  background-color: #6055a5;
+  border-radius: 0.3em;
+  width: 100%;
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  -webkit-box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price-info div {
+  font-size: 0.7em;
+  text-align: center;
+  width: 11em;
+}
+
+.price-info span {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1000px) {
+  .price-info {
+    grid-area: info;
+    height: 2.5em;
+  }
+  .price-info div {
+    width: 100%;
+  }
+}
+
+.form {
+  background-color: white;
+  border-radius: 0.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2em;
+  color: #b9b6d3;
+  -webkit-box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form .form-contents {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form .input,
+.form .btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: inherit;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.form input::-webkit-input-placeholder {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form input:-ms-input-placeholder {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form input::-ms-input-placeholder {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form input::placeholder {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form .btn {
+  width: 100%;
+  font-weight: 700;
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 3px solid;
+  border-color: #5da887;
+}
+
+.form .btn:hover {
+  background-color: #2bda8e;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.form .term {
+  font-size: 0.55em;
+  text-align: center;
+  width: 95%;
+}
+
+.form .term span {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1000px) {
+  .form {
+    grid-area: form;
+    padding: 1em;
+    height: 80%;
+  }
+  .form .term {
+    font-size: 0.45em;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (min-width: 1000px) {
+  .attribution {
+    height: 2.5em;
+  }
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
