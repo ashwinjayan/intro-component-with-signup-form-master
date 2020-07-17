@@ -138,6 +138,12 @@ body {
   margin-bottom: 1em;
 }
 
+.form input {
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #b9b6d3;
+}
+
 .form input::-webkit-input-placeholder {
   font-weight: 600;
   font-family: 'Poppins', sans-serif;

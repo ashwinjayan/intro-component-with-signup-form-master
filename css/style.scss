@@ -125,6 +125,12 @@ body {
         margin-bottom: 1em;
     }
 
+    input {
+        border-radius: 5px;
+        border: 1px solid;
+        border-color: $gray-blue;
+    }
+
     input::placeholder {
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
