@@ -23,6 +23,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .container {
+    height: 99vh;
     width: 80%;
     margin-top: 5%;
     display: -ms-grid;
@@ -202,14 +203,13 @@ body {
   border-radius: 0.3em;
   color: white;
   text-transform: uppercase;
-  border-bottom: 3px solid;
-  border-color: #5da887;
 }
 
 .form .btn:hover {
   background-color: #2bda8e;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .form .term {

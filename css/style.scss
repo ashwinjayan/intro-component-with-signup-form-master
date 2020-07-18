@@ -30,6 +30,7 @@ body {
     justify-items     : center;
 
     @media only screen and (min-width: 1000px) {
+        height               : 99vh;
         width                : 80%;
         margin-top           : 5%;
         display              : grid;
@@ -48,7 +49,7 @@ body {
 }
 
 .header {
-    align-self: center;
+    align-self : center;
     font-size  : 0.8em;
     line-height: 1.4;
     width      : 100%;
@@ -71,12 +72,12 @@ body {
 }
 
 .price-info {
-    align-self: center;
+    align-self      : center;
     background-color: $blue;
     border-radius   : 0.3em;
     width           : 100%;
     height          : 4em;
-    padding: 0 1.2em;
+    padding         : 0 1.2em;
 
     display        : flex;
     justify-content: center;
@@ -106,7 +107,7 @@ body {
 }
 
 .form {
-    align-self: center;
+    align-self      : center;
     background-color: white;
     border-radius   : 0.3em;
     display         : flex;
@@ -157,19 +158,21 @@ body {
     }
 
     .btn {
-        width           : 100%;
-        font-weight     : 700;
-        background-color: $green;
-        border          : none;
-        border-radius   : 0.3em;
-        color           : white;
-        text-transform  : uppercase;
-        border-bottom   : 3px solid;
-        border-color    : rgba($color: hsl(154, 30%, 51%), $alpha: 1.0);
+        width             : 100%;
+        font-weight       : 700;
+        background-color  : $green;
+        border            : none;
+        border-radius     : 0.3em;
+        color             : white;
+        text-transform    : uppercase;
+        //border-bottom   : 3px solid;
+        //border-color    : rgba($color: hsl(154, 30%, 51%), $alpha: 1.0);
 
         &:hover {
+            //box-shadow: inset 3px 3px 0 rgba($color: #000000, $alpha: 0.2);
             background-color: hsl(154, 70%, 51%);
             transition      : all 0.3s ease-in-out;
+            text-shadow     : 0 0 4px rgba($color: #000000, $alpha: 0.3);
         }
     }
 
