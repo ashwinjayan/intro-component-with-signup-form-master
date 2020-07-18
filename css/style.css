@@ -118,6 +118,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1.2em;
+  height: 18em;
   color: #b9b6d3;
   -webkit-box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
