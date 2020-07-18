@@ -129,6 +129,16 @@ body {
           box-sizing: border-box;
 }
 
+.form .error {
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 95%;
+}
+
 .form .input,
 .form .btn {
   -webkit-box-sizing: border-box;
@@ -140,8 +150,7 @@ body {
 
 .form input {
   border-radius: 5px;
-  border: 1px solid;
-  border-color: #b9b6d3;
+  border: 1px solid #b9b6d3;
 }
 
 .form input::-webkit-input-placeholder {

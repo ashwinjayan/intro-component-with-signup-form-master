@@ -12,34 +12,34 @@ $gray-blue: hsl(246, 25%, 77%);
 
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+    font-family     : 'Poppins', sans-serif;
+    font-size       : calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
     background-image: url("../images/bg-intro-mobile.png");
     background-color: $red;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    color           : white;
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
 }
 
 .container {
-    margin: 0 auto;
-    width: 16em;
-    display: grid;
+    margin            : 0 auto;
+    width             : 16em;
+    display           : grid;
     grid-template-rows: 6fr 2fr 7fr;
-    justify-items: center;
+    justify-items     : center;
 
     @media only screen and (min-width: 1000px) {
-        width: 80%;
-        margin-top: 5%;
-        display: grid;
-        grid-template-rows: 1fr 6fr;
+        width                : 80%;
+        margin-top           : 5%;
+        display              : grid;
+        grid-template-rows   : 1fr 6fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "header info"
-                            "header  form";
+        grid-template-areas  : "header info"
+            "header  form";
         column-gap: 2em;
-        row-gap: 0.5em;
-        height: 80vh;
+        row-gap   : 0.5em;
+        height    : 80vh;
     }
 }
 
@@ -48,18 +48,18 @@ body {
 }
 
 .header {
-    font-size: 0.8em;
+    font-size  : 0.8em;
     line-height: 1.4;
-    width: 100%;
-    text-align: center;
-    margin-top: 4em;
+    width      : 100%;
+    text-align : center;
+    margin-top : 4em;
 
     p {
         font-weight: 500;
     }
 
     @media only screen and (min-width: 1000px) {
-        grid-area: header;
+        grid-area : header;
         text-align: left;
 
         p {
@@ -70,21 +70,21 @@ body {
 
 .price-info {
     background-color: $blue;
-    border-radius: 0.3em;
-    width: 100%;
-    height: 4em;
+    border-radius   : 0.3em;
+    width           : 100%;
+    height          : 4em;
 
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 
     font-weight: 400;
-    box-shadow: 0 8px 0 rgba($color: #000000, $alpha: 0.2);
+    box-shadow : 0 8px 0 rgba($color: #000000, $alpha: 0.2);
 
     div {
-        font-size: 0.7em;
+        font-size : 0.7em;
         text-align: center;
-        width: 11em;
+        width     : 11em;
     }
 
     span {
@@ -93,7 +93,7 @@ body {
 
     @media only screen and (min-width: 1000px) {
         grid-area: info;
-        height: 2.5em;
+        height   : 2.5em;
 
         div {
             width: 100%;
@@ -103,32 +103,41 @@ body {
 
 .form {
     background-color: white;
-    border-radius: 0.3em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.2em;
-    color: $gray-blue;
+    border-radius   : 0.3em;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    padding         : 1.2em;
+    color           : $gray-blue;
 
     box-shadow: 0 8px 0 rgba($color: #000000, $alpha: 0.2);
 
     .form-contents {
-        width: 100%;
+        width     : 100%;
         box-sizing: border-box;
+    }
+
+    .error {
+        border: 2px solid red;
+        border-radius: 5px;
+        color: red;
+        background-image: url("../images/icon-error.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-x: 95%;
     }
 
     .input,
     .btn {
-        box-sizing: border-box;
-        width: inherit;
-        padding: 1em;
+        box-sizing   : border-box;
+        width        : inherit;
+        padding      : 1em;
         margin-bottom: 1em;
     }
 
     input {
-        border-radius: 5px;
-        border: 1px solid;
-        border-color: $gray-blue;
+         border-radius: 5px;
+         border       : 1px solid $gray-blue;
     }
 
     input::placeholder {
@@ -137,37 +146,37 @@ body {
     }
 
     .btn {
-        width: 100%;
-        font-weight: 700;
+        width           : 100%;
+        font-weight     : 700;
         background-color: $green;
-        border: none;
-        border-radius: 0.3em;
-        color: white;
-        text-transform: uppercase;
-        border-bottom: 3px solid;
-        border-color: rgba($color: hsl(154, 30%, 51%), $alpha: 1.0);
+        border          : none;
+        border-radius   : 0.3em;
+        color           : white;
+        text-transform  : uppercase;
+        border-bottom   : 3px solid;
+        border-color    : rgba($color: hsl(154, 30%, 51%), $alpha: 1.0);
 
         &:hover {
             background-color: hsl(154, 70%, 51%);
-            transition: all 0.3s ease-in-out;
+            transition      : all 0.3s ease-in-out;
         }
     }
 
     .term {
-        font-size: 0.55em;
+        font-size : 0.55em;
         text-align: center;
-        width: 95%;
+        width     : 95%;
 
         span {
-            color: $red;
+            color      : $red;
             font-weight: 700;
         }
     }
 
     @media only screen and (min-width: 1000px) {
         grid-area: form;
-        padding: 1em;
-        height: 80%;
+        padding  : 1em;
+        height   : 80%;
 
         .term {
             font-size: 0.45em;
@@ -176,12 +185,13 @@ body {
 }
 
 .attribution {
-    font-size : 11px;
-    text-align: center;
-    height: 4em;
-    display: flex;
+    font-size      : 11px;
+    text-align     : center;
+    height         : 4em;
+    display        : flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items    : flex-end;
+
     @media only screen and (min-width: 1000px) {
         height: 2.5em;
     }
