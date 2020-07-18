@@ -48,6 +48,7 @@ body {
 }
 
 .header {
+    align-self: center;
     font-size  : 0.8em;
     line-height: 1.4;
     width      : 100%;
@@ -61,7 +62,6 @@ body {
     @media only screen and (min-width: 1000px) {
         grid-area : header;
         text-align: left;
-        align-self: center;
         margin    : 0;
 
         p {
@@ -71,6 +71,7 @@ body {
 }
 
 .price-info {
+    align-self: center;
     background-color: $blue;
     border-radius   : 0.3em;
     width           : 100%;
@@ -105,6 +106,7 @@ body {
 }
 
 .form {
+    align-self: center;
     background-color: white;
     border-radius   : 0.3em;
     display         : flex;
