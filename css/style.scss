@@ -108,37 +108,40 @@ body {
     flex-direction  : column;
     justify-content : center;
     padding         : 1.2em;
-    height: 18em;
+    height          : 18em;
     color           : $gray-blue;
 
     box-shadow: 0 8px 0 rgba($color: #000000, $alpha: 0.2);
 
     .form-contents {
-        width     : 100%;
-        box-sizing: border-box;
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-evenly;
+        width          : 100%;
+        box-sizing     : border-box;
+        height: 100%;
     }
 
     .error {
-        border: 2px solid red;
-        border-radius: 5px;
-        color: red;
-        background-image: url("../images/icon-error.svg");
-        background-repeat: no-repeat;
-        background-position: right;
+        border               : 2px solid red;
+        border-radius        : 5px;
+        color                : red;
+        background-image     : url("../images/icon-error.svg");
+        background-repeat    : no-repeat;
+        background-position  : right;
         background-position-x: 95%;
     }
 
     .input,
     .btn {
-        box-sizing   : border-box;
-        width        : inherit;
-        padding      : 1em;
-        margin-bottom: 1em;
+        box-sizing: border-box;
+        width     : inherit;
+        padding   : 1em;
     }
 
     input {
-         border-radius: 5px;
-         border       : 1px solid $gray-blue;
+        border-radius: 5px;
+        border       : 1px solid $gray-blue;
     }
 
     input::placeholder {
